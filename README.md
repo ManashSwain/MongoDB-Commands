@@ -66,7 +66,7 @@ A comparison between SQL and MongoDB to help understand their differences.
 
 Below is an example of how student data can be structured in MongoDB with embedded documents for subjects and grades.
 
-```javascript
+```json
 [
   {
     "_id": "unique_id_1",
@@ -120,6 +120,8 @@ Below is an example of how student data can be structured in MongoDB with embedd
     ]
   }
 ]
+
+```
 
 # Key Features of MongoDB
 
