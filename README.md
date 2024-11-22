@@ -171,4 +171,4 @@ A comparison between SQL and MongoDB to help understand their differences.
 
 ## How MongoDB Works
 
-![Flow diagram](/Images/flow.png)
+![Flow diagram](./Images/flow.png)
