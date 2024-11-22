@@ -72,27 +72,27 @@ A comparison between SQL and MongoDB to help understand their differences.
 | 5            | 3              | 103            | A         |
 
 
-## Mongo DB document structure
+## MongoDB Data Example
 
-
+Below is an example of how student data can be structured in MongoDB with embedded documents for subjects and grades.
 
 ```json
 [
   {
-    "_id": ObjectId("unique_id_1"),
+    "_id": "unique_id_1",
     "first_name": "John",
     "last_name": "Doe",
     "date_of_birth": "2000-05-12",
     "email": "john.doe@example.com",
     "subjects": [
       {
-        "subject_id": ObjectId("unique_subject_id_1"),
+        "subject_id": "unique_subject_id_1",
         "subject_name": "Mathematics",
         "credits": 4,
         "grade": "A"
       },
       {
-        "subject_id": ObjectId("unique_subject_id_2"),
+        "subject_id": "unique_subject_id_2",
         "subject_name": "Physics",
         "credits": 3,
         "grade": "B+"
@@ -100,14 +100,14 @@ A comparison between SQL and MongoDB to help understand their differences.
     ]
   },
   {
-    "_id": ObjectId("unique_id_2"),
+    "_id": "unique_id_2",
     "first_name": "Jane",
     "last_name": "Smith",
     "date_of_birth": "2001-09-20",
     "email": "jane.smith@example.com",
     "subjects": [
       {
-        "subject_id": ObjectId("unique_subject_id_3"),
+        "subject_id": "unique_subject_id_3",
         "subject_name": "Computer Science",
         "credits": 4,
         "grade": "A-"
@@ -115,27 +115,21 @@ A comparison between SQL and MongoDB to help understand their differences.
     ]
   },
   {
-    "_id": ObjectId("unique_id_3"),
+    "_id": "unique_id_3",
     "first_name": "Alice",
     "last_name": "Johnson",
     "date_of_birth": "1999-03-15",
     "email": "alice.johnson@example.com",
     "subjects": [
       {
-        "subject_id": ObjectId("unique_subject_id_1"),
+        "subject_id": "unique_subject_id_1",
         "subject_name": "Mathematics",
         "credits": 4,
         "grade": "B"
-      },
-      {
-        "subject_id": ObjectId("unique_subject_id_3"),
-        "subject_name": "Computer Science",
-        "credits": 4,
-        "grade": "A"
       }
     ]
-  }
-]
+
+
 
 ## Key Features of MongoDB
 
