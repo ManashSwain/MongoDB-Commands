@@ -133,7 +133,7 @@ Below is an example of how student data can be structured in MongoDB with embedd
 
 
 
-# Key Features of MongoDB
+#  Key Features of MongoDB
 
 ## 1. Flexible Schema Design
 - **Schema-less**: MongoDB allows documents within the same collection to have different structures, which gives flexibility to handle evolving data models.
@@ -164,9 +164,4 @@ Below is an example of how student data can be structured in MongoDB with embedd
 - **Free and Open Source**: MongoDB is released under the SSPL (Server Side Public License), making it open-source and accessible to developers and organizations.
 - **Active Community**: MongoDB has a large and active community of developers, providing open forums, guides, and solutions to common problems.
 - **Extensive Documentation**: MongoDB offers comprehensive documentation, tutorials, and a wide range of community resources, making it easy for newcomers to learn and integrate MongoDB.
-
-
-
-
-
 
