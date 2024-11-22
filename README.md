@@ -138,7 +138,7 @@ A comparison between SQL and MongoDB to help understand their differences.
 ]
 
 
-# Key Features of MongoDB
+##  Key Features of MongoDB
 
 ## 1. Flexible Schema Design
 - **Schema-less**: MongoDB allows documents within the same collection to have different structures, which gives flexibility to handle evolving data models.
@@ -172,4 +172,4 @@ A comparison between SQL and MongoDB to help understand their differences.
 
 ## How MongoDB Works
 
-![alt text](image.png)
+![Flow diagram](./Images/image.png)
