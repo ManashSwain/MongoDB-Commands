@@ -15,4 +15,124 @@ MongoDB Compass is a graphical user interface (GUI) tool provided by MongoDB for
 
 The MongoDB Shell (mongosh) is an interactive JavaScript-based command-line interface for MongoDB. It allows users to interact directly with MongoDB databases, perform administrative tasks, and execute queries in real time.
 
+
+## MongoDB 
+
+
+MongoDB is a popular open-source, NoSQL database management system that stores data in a flexible, document-oriented format called BSON (Binary JSON). It is designed to handle unstructured or semi-structured data, making it highly scalable, performant, and suitable for modern application development.It came from the word Humongous.
+
+
+# SQL vs MongoDB
+
+A comparison between SQL and MongoDB to help understand their differences.
+
+| **Aspect**                 | **SQL (Relational Databases)**                               | **MongoDB (NoSQL Database)**                          |
+|----------------------------|-------------------------------------------------------------|------------------------------------------------------|
+| **Data Model**             | Relational, table-based (rows and columns).                 | Document-oriented, uses BSON (JSON-like) documents. |
+| **Schema**                 | Fixed schema; structure must be defined beforehand.         | Schema-less; allows dynamic fields and flexibility.  |
+| **Query Language**         | SQL (Structured Query Language).                            | MongoDB Query Language (MQL), JavaScript-based.      |
+| **Relationships**          | Uses joins to relate tables.                                | Embeds or references documents to handle relations.  |
+| **Scaling**                | Vertical scaling (adding resources to a single server).     | Horizontal scaling (sharding across servers).        |
+| **Transaction Support**    | Full ACID compliance (Atomicity, Consistency, Isolation, Durability). | ACID compliance for multi-document transactions introduced in later versions. |
+| **Performance**            | Optimized for structured data with complex queries.         | Faster for unstructured or semi-structured data.     |
+| **Use Cases**              | Banking, e-commerce, and systems requiring complex relationships. | Real-time analytics, IoT, and applications with evolving schemas. |
+| **Examples of Databases**  | MySQL, PostgreSQL, Oracle DB, Microsoft SQL Server.         | MongoDB, Couchbase, Cassandra.                      |
+| **Storage**                | Table-based storage.                                        | Collection of documents stored as key-value pairs.  |
+| **Normalization**          | Data is normalized (minimized redundancy).                 | Data is often denormalized for faster access.        |
+| **Installation**           | Requires database management software.                     | Standalone or hosted services like MongoDB Atlas.    |
+
+
  
+
+ ## SQL Database Structure
+
+ # Database Tables
+
+## Students Table
+| **Student ID** | **First Name** | **Last Name** | **Date of Birth** | **Email**               |
+|----------------|----------------|---------------|-------------------|-------------------------|
+| 1              | John           | Doe           | 2000-05-12        | john.doe@example.com    |
+| 2              | Jane           | Smith         | 2001-09-20        | jane.smith@example.com  |
+| 3              | Alice          | Johnson       | 1999-03-15        | alice.johnson@example.com |
+
+## Subjects Table
+| **Subject ID** | **Subject Name**     | **Credits** |
+|----------------|----------------------|-------------|
+| 101            | Mathematics          | 4           |
+| 102            | Physics              | 3           |
+| 103            | Computer Science     | 4           |
+
+## Grades Table
+| **Grade ID** | **Student ID** | **Subject ID** | **Grade** |
+|--------------|----------------|----------------|-----------|
+| 1            | 1              | 101            | A         |
+| 2            | 1              | 102            | B+        |
+| 3            | 2              | 103            | A-        |
+| 4            | 3              | 101            | B         |
+| 5            | 3              | 103            | A         |
+
+
+## Mongo DB document structure
+
+
+
+```json
+[
+  {
+    "_id": ObjectId("unique_id_1"),
+    "first_name": "John",
+    "last_name": "Doe",
+    "date_of_birth": "2000-05-12",
+    "email": "john.doe@example.com",
+    "subjects": [
+      {
+        "subject_id": ObjectId("unique_subject_id_1"),
+        "subject_name": "Mathematics",
+        "credits": 4,
+        "grade": "A"
+      },
+      {
+        "subject_id": ObjectId("unique_subject_id_2"),
+        "subject_name": "Physics",
+        "credits": 3,
+        "grade": "B+"
+      }
+    ]
+  },
+  {
+    "_id": ObjectId("unique_id_2"),
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "date_of_birth": "2001-09-20",
+    "email": "jane.smith@example.com",
+    "subjects": [
+      {
+        "subject_id": ObjectId("unique_subject_id_3"),
+        "subject_name": "Computer Science",
+        "credits": 4,
+        "grade": "A-"
+      }
+    ]
+  },
+  {
+    "_id": ObjectId("unique_id_3"),
+    "first_name": "Alice",
+    "last_name": "Johnson",
+    "date_of_birth": "1999-03-15",
+    "email": "alice.johnson@example.com",
+    "subjects": [
+      {
+        "subject_id": ObjectId("unique_subject_id_1"),
+        "subject_name": "Mathematics",
+        "credits": 4,
+        "grade": "B"
+      },
+      {
+        "subject_id": ObjectId("unique_subject_id_3"),
+        "subject_name": "Computer Science",
+        "credits": 4,
+        "grade": "A"
+      }
+    ]
+  }
+]
