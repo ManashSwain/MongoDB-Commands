@@ -267,7 +267,7 @@ Here are some of the download links
 
 ## commands
 
-To check the version
+To check the  MongoDB version
 
 ```bash
   mongod --version
