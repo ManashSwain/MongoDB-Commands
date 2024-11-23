@@ -256,7 +256,32 @@ BSON (Binary JSON) is a binary-encoded serialization format used primarily to st
 Here are some of the download links
 
 [MongoDB](https://www.mongodb.com/try/download/community)
+
+
 [MongoDB Shell](https://www.mongodb.com/try/download/shell)
+
+
 [MongoDB Database tools](https://www.mongodb.com/try/download/database-tools)
+
+
+
+## commands
+
+To check the version
+
+```bash
+  mongod --version
+```
+
+To start mongoDB Server
+
+```bash
+  mongosh
+```
+
+
+
+
+
 
 
