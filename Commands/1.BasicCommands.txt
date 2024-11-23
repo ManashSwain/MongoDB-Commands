@@ -1,0 +1,47 @@
+Viewing  Database commands
+show dbs;
+show databases;
+
+
+use database command
+use databasename;
+
+
+delete databases command
+db.dropDatabase();
+
+
+view collections command
+show collections;
+
+
+create collection command
+db.createCollection("collection-name");
+
+
+drop collection command
+db.collectionName.drop();
+
+
+InsertOne operation in mongoDB
+db.collectionName.insertOne({
+    field1 : value1 ,
+    field2 : value2
+});
+
+
+InsertMany operation in mongoDB
+db.collectionName.insertMany([
+    {
+    field1 : value1 ,
+    field2 : value2
+},
+{
+    field1 : value1 ,
+    field2 : value2
+} 
+])
+
+
+ 
+
