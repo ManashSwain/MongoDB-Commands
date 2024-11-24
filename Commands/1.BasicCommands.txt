@@ -43,5 +43,11 @@ db.collectionName.insertMany([
 ])
 
 
+Ordered and unordered inserts commands
+db.collectionName.insertMany({
+    [{doc1},{doc2}]
+},{ordered: false})
+
+
  
 
