@@ -369,6 +369,42 @@ db.collectionName.insertMany([
 
 ```
 
+## Case Sensitivity in MongoDB
+
+### Below two commands are different as the first command will  insert the document in Products collection and the second command will insert the document in the products collection.
+
+### Note : Products collection and products collection are different.
+
+```javascript
+
+db.Products.insertOne({
+    field1: value1,
+    field2: value2
+});
+```
+
+```javascript
+
+db.products.insertOne({
+    field1: value1,
+    field2: value2
+});
+```
+
+## Read operations in MongoDB
+
+- Reading document in MongoDB
+
+- Comparison Operator
+
+- Logical Operator
+
+- Cursors in MongoDB
+
+- Element Operators
+
+
+
 
 
 
