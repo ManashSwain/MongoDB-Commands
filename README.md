@@ -301,6 +301,11 @@ show databases;
 use databasename;
 ```
 
+- This can also create a new database .
+- If database is not present it will create a new database.
+- If there are no collections it will not show.
+
+
 ## Drop the current database
 
 ```javascript

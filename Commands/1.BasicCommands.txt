@@ -23,11 +23,12 @@ drop collection command
 db.collectionName.drop();
 
 
-InsertOne operation in mongoDB
+InsetOne operation in mongoDB
 db.collectionName.insertOne({
     field1 : value1 ,
     field2 : value2
 });
+
 
 
 InsertMany operation in mongoDB
