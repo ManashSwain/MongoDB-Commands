@@ -282,49 +282,57 @@ To start mongoDB Server
 
 ## Viewing Databases
 
-```bash
+```javascript
+
 show dbs;
 ```
 
 ## Alternative command to list all databases
 
-```bash
+```javascript
+
 show databases;
 ```
 
 ## Switch to a specific database (or create it if it doesn't exist)
 
-```bash
+```javascript
+
 use databasename;
 ```
 
 ## Drop the current database
 
-```bash
+```javascript
+
 db.dropDatabase();
 ```
 
 ## Show all collections in the current database
 
-```bash
+```javascript
+
 show collections;
 ```
 
 ## Create a new collection
 
-```bash
+```javascript
+
 db.createCollection("collection-name");
 ```
 
 ## Drop a specific collection
 
-```bash
+```javascript
+
 db.collectionName.drop();
 ```
 
 ## Insert one document into a collection
 
-```bash
+```javascript
+
 db.collectionName.insertOne({
     field1: value1,
     field2: value2
@@ -333,7 +341,8 @@ db.collectionName.insertOne({
 
 ## Insert multiple documents into a collection
 
-```bash
+```javascript
+
 db.collectionName.insertMany([
     {
         field1: value1,
@@ -344,11 +353,13 @@ db.collectionName.insertMany([
         field2: value2
     }
 ]);
+
 ```
 
 ## Insert multiple documents in an unordered manner
 
-```bash
+```javascript
+
 db.collectionName.insertMany([
     { field1: value1,
      field2: value2 },
