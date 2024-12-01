@@ -396,6 +396,35 @@ db.products.insertOne({
 });
 ```
 
+## Database tools basic commands  
+
+### Importing an Expoting commands.
+
+### Importing Data
+
+- Open new command line and use these commands
+- These database tools commands works outside database
+
+
+``` javascipt
+mongoimport filename.json -d databasename -c collectionname
+```
+
+``` javascipt
+mongoimport products.json -d shop -c products
+```
+
+``` javascipt
+mongoimport products.json -d shop -c products --jsonarray
+
+```
+
+### Exporting data
+
+```javascript
+mongoexport -d shop -c sales -o E:\mongo\files\sample.json
+```
+
 ## Read operations in MongoDB
 
 ### 1. Reading document in MongoDB
