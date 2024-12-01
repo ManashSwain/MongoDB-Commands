@@ -398,15 +398,43 @@ db.products.insertOne({
 
 ## Read operations in MongoDB
 
-- Reading document in MongoDB
+### 1. Reading document in MongoDB
 
-- Comparison Operator
+### 2. Comparison Operator
 
-- Logical Operator
+### 3. Logical Operator
 
-- Cursors in MongoDB
+### 4. Cursors in MongoDB
 
-- Element Operators
+### 5. Element Operators
+
+
+## 1. Reading document in MongoDB 
+
+ ### find() and findOne()
+
+ - Find all documents in the collection
+
+ ``` javascript
+ db.collectionname.find();
+ ```
+
+ - Find documents based on condition.
+ - Find will fetch multiple documents.
+
+ ``` javascript
+ db.collectionname.find({key : value});
+ ```
+
+ ### Find Single document
+
+ ``` javascript
+ db.collectionname.findOne({field : value});
+
+ ```
+
+
+
 
 
 
