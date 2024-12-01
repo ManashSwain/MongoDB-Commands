@@ -409,10 +409,21 @@ db.products.insertOne({
 ``` javascipt
 mongoimport filename.json -d databasename -c collectionname
 ```
+### Example command
 
 ``` javascipt
 mongoimport products.json -d shop -c products
 ```
+
+### Actual Command
+
+```javascript
+
+mongoimport C:\Users\MANASH\OneDrive\Desktop\mongoDB\SampleDocuments/products.json -d shop -c products
+
+```
+
+- If data is in array format use below command 
 
 ``` javascipt
 mongoimport products.json -d shop -c products --jsonarray
