@@ -473,6 +473,76 @@ mongoexport -d shop -c sales -o E:\mongo\files\sample.json
 
  ```
 
+ ## 2. Comparison Operators in MongoDB 
+
+  
+
+MongoDB provides a variety of comparison operators for querying documents in collections. These operators allow you to filter data based on specific conditions.
+
+| **Operator** | **Description**                                                                 | **Example**                                                                                       |
+|--------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| `$eq`        | Matches documents where the field is equal to the specified value.             | `{ field: { $eq: value } }`                                                                      |
+| `$ne`        | Matches documents where the field is not equal to the specified value.         | `{ field: { $ne: value } }`                                                                      |
+| `$gt`        | Matches documents where the field is greater than the specified value.         | `{ field: { $gt: value } }`                                                                      |
+| `$gte`       | Matches documents where the field is greater than or equal to the specified value. | `{ field: { $gte: value } }`                                                                 |
+| `$lt`        | Matches documents where the field is less than the specified value.            | `{ field: { $lt: value } }`                                                                      |
+| `$lte`       | Matches documents where the field is less than or equal to the specified value. | `{ field: { $lte: value } }`                                                                     |
+| `$in`        | Matches documents where the field's value is in an array of specified values.  | `{ field: { $in: [value1, value2] } }`                                                           |
+| `$nin`       | Matches documents where the field's value is not in an array of specified values. | `{ field: { $nin: [value1, value2] } }`                                                        |
+
+---
+
+## Examples
+
+### 1. `$eq` (Equals)
+
+Find documents where the `price` field is equal to 300:
+```javascript
+db.products.find({price : {$eq : 300}});
+
+```
+
+### 2. `$ne` (Not equals)
+
+Find documents where the `price` field is not equal to 300:
+```javascript
+db.products.find({price : {$ne : 300}});
+
+```
+
+### 3. `$gt` (Greater than)
+
+Find documents where the `price` field is greater than 300:
+```javascript
+db.collectionName.find({ age: { $eq: 30 } });
+
+```
+
+### 1. `$eq` (Equals)
+
+Find documents where the `age` field is equal to 30:
+```javascript
+db.collectionName.find({ age: { $eq: 30 } });
+
+```
+
+### 1. `$eq` (Equals)
+
+Find documents where the `age` field is equal to 30:
+```javascript
+db.collectionName.find({ age: { $eq: 30 } });
+
+```
+
+### 1. `$eq` (Equals)
+
+Find documents where the `age` field is equal to 30:
+```javascript
+db.collectionName.find({ age: { $eq: 30 } });
+
+```
+ 
+
 
 
 
