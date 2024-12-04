@@ -510,37 +510,9 @@ db.products.find({price : {$ne : 300}});
 
 ```
 
-### 3. `$gt` (Greater than)
 
-Find documents where the `price` field is greater than 300:
-```javascript
-db.collectionName.find({ age: { $eq: 30 } });
 
-```
 
-### 1. `$eq` (Equals)
-
-Find documents where the `age` field is equal to 30:
-```javascript
-db.collectionName.find({ age: { $eq: 30 } });
-
-```
-
-### 1. `$eq` (Equals)
-
-Find documents where the `age` field is equal to 30:
-```javascript
-db.collectionName.find({ age: { $eq: 30 } });
-
-```
-
-### 1. `$eq` (Equals)
-
-Find documents where the `age` field is equal to 30:
-```javascript
-db.collectionName.find({ age: { $eq: 30 } });
-
-```
  
 
 
