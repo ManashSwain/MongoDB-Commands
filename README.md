@@ -518,6 +518,14 @@ db.products.find({price : {$gt : 300}});
 
 ```
 
+### 3. `$lt` (less than)
+
+Find documents where the `price` field is less than to 300:
+```javascript
+db.products.find({price : {$lt : 300}});
+
+```
+
 
 
 
